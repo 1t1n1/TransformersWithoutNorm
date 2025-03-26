@@ -183,22 +183,29 @@ class TransformerDecoderLayer(nn.Module):
             d_ff: int,
             nhead: int,
             dropout: float,
-            normcls = nn.LayerNorm
+            normclspre = nn.LayerNorm,
+            normclspost = nn.LayerNorm,
+            normpos = 'after'
         ):
         super().__init__()
+
+        assert normpos in ['before', 'after', 'both'], "normpos must be 'before', 'after' or 'both'."
 
         self.d_model = d_model
         self.d_ff = d_ff
         self.nhead = nhead
 
         self.selfattn = MultiheadAttention(d_model, nhead, dropout)
-        self.normselfattn = normcls(d_model)
+        self.normselfattnpre = normclspre(d_model)
+        self.normselfattnpost = normclspost(d_model)
         self.crossattn = MultiheadAttention(d_model, nhead, dropout)
-        self.normcrossattn = normcls(d_model)
+        self.normcrossattnpre = normclspre(d_model)
+        self.normcrossattnpost = normclspost(d_model)
         self.ff1 = nn.Linear(d_model, d_ff)
         self.dropout = nn.Dropout(dropout)
         self.ff2 = nn.Linear(d_ff, d_model)
-        self.normff = normcls(d_model)
+        self.normffpre = normclspre(d_model)
+        self.normffpost = normclspro(d_model)
 
     def forward(
             self,
@@ -228,12 +235,21 @@ class TransformerDecoderLayer(nn.Module):
             y:  Batch of sequence of embeddings representing the predicted target tokens
                 Shape of [batch_size, tgt_seq_len, dim_model].
         """
+        if normpos in ['before', 'both']:
+          tgt = self.normselfattnpre(tgt)
         tgt = tgt + self.selfattn(tgt, tgt, tgt, tgt_key_padding_mask, tgt_mask_attn)
-        tgt = self.normselfattn(tgt)
+        if normpos in ['after', 'both']:
+            tgt = self.normselfattn(tgt)
+        if normpos in ['before', 'both']:
+            tgt = self.normcrossattnpre(tgt)
         tgt = tgt + self.crossattn(tgt, src, src, src_key_padding_mask, None)
-        tgt = self.normcrossattn(tgt)
+        if normpos in ['after', 'both']:
+            tgt = self.normcrossattnpost(tgt)
+        if normpos in ['before', 'both']:
+            tgt = self.normffpre(tgt)
         tgt = tgt + self.ff2(self.dropout(self.ff1(tgt)))
-        tgt = self.normff(tgt)
+        if normpos in ['after', 'both']:
+            tgt = self.normffpost(tgt)
         return tgt
 
 
@@ -256,13 +272,15 @@ class TransformerDecoder(nn.Module):
             num_decoder_layer:int ,
             nhead: int,
             dropout: float,
-            normcls = nn.LayerNorm
+            normclspre = nn.LayerNorm,
+            normclspost = nn.LayerNorm,
+            normpos = 'after'
         ):
         super().__init__()
 
         self.layers = nn.ModuleList()
         for i in range(num_decoder_layer):
-          self.layers.append(TransformerDecoderLayer(d_model,d_ff,nhead,dropout,normcls))
+          self.layers.append(TransformerDecoderLayer(d_model,d_ff,nhead,dropout,normclspre,normclspost,normpos))
 
     def forward(
             self,
@@ -314,20 +332,26 @@ class TransformerEncoderLayer(nn.Module):
             d_ff: int,
             nhead: int,
             dropout: float,
-            normcls = nn.LayerNorm
+            normclspre = nn.LayerNorm,
+            normclspost = nn.LayerNorm,
+            normpos = 'after'
         ):
         super().__init__()
+
+        assert normpos in ['before', 'after', 'both'], "normpos must be 'before', 'after' or 'both'."
 
         self.d_model = d_model
         self.d_ff = d_ff
         self.nhead = nhead
 
         self.selfattn = MultiheadAttention(d_model, nhead, dropout)
-        self.normselfattn = normcls(d_model)
+        self.normselfattnpre = normclspre(d_model)
+        self.normselfattnpost = normclspost(d_model)
         self.ff1 = nn.Linear(d_model, d_ff)
         self.dropout = nn.Dropout(dropout)
         self.ff2 = nn.Linear(d_ff, d_model)
-        self.normff = normcls(d_model)
+        self.normffpre = normclspre(d_model)
+        self.normffpost = normclspost(d_model)
 
     def forward(
         self,
@@ -348,10 +372,16 @@ class TransformerEncoderLayer(nn.Module):
             y: Batch of encoded source tokens.
                 Shape of [batch_size, src_seq_len, dim_model].
         """
+        if normpos in ['before', 'both']:
+          src = self.normselfattnpre(src)
         src = src + self.selfattn(src, src, src, key_padding_mask)
-        src = self.normselfattn(src)
+        if normpos in ['after', 'both']:
+            src = self.normselfattnpost(src)
+        if normpos in ['before', 'both']:
+            src = self.normffpre(src)
         src = src + self.ff2(self.dropout(self.ff1(src)))
-        src = self.normff(src)
+        if normpos in ['after', 'both']:
+            src = self.normffpost(src)
         return src
 
 
@@ -374,13 +404,15 @@ class TransformerEncoder(nn.Module):
             num_encoder_layers: int,
             nheads: int,
             dropout: float,
-            normcls = nn.LayerNorm
+            normclspre = nn.LayerNorm,
+            normclspost = nn.LayerNorm,
+            normpos = 'after'
         ):
         super().__init__()
 
         self.layers = nn.ModuleList()
         for i in range(num_encoder_layers):
-          self.layers.append(TransformerEncoderLayer(d_model,dim_feedforward,nheads,dropout,normcls))
+          self.layers.append(TransformerEncoderLayer(d_model,dim_feedforward,nheads,dropout,normclspre,normclspost,normpos))
 
 
     def forward(
@@ -429,11 +461,13 @@ class Transformer(nn.Module):
             num_decoder_layers: int,
             dim_feedforward: int,
             dropout: float,
-            normcls = nn.LayerNorm
+            normclspre = nn.LayerNorm,
+            normclspost = nn.LayerNorm,
+            normpos = 'after'
         ):
         super().__init__()
-        self.enc = TransformerEncoder(d_model, dim_feedforward, num_encoder_layers, nhead,dropout,normcls)
-        self.dec = TransformerDecoder(d_model, dim_feedforward, num_encoder_layers, nhead,dropout,normcls)
+        self.enc = TransformerEncoder(d_model, dim_feedforward, num_encoder_layers, nhead,dropout,normclspre,normclspost,normpos)
+        self.dec = TransformerDecoder(d_model, dim_feedforward, num_encoder_layers, nhead,dropout,normclspre,normclspost,normpos)
 
     def forward(
             self,
@@ -497,7 +531,9 @@ class TranslationTransformer(nn.Module):
             dropout: float,
             src_pad_idx: int,
             tgt_pad_idx: int,
-            normcls = nn.LayerNorm
+            normclspre = nn.LayerNorm,
+            normclspost = nn.LayerNorm,
+            normpos = 'after'
         ):
         super().__init__()
 
@@ -505,7 +541,7 @@ class TranslationTransformer(nn.Module):
         self.tgt_pad_idx = tgt_pad_idx
         self.srcemb = nn.Embedding(n_tokens_src, dim_embedding)
         self.tgtemb = nn.Embedding(n_tokens_tgt, dim_embedding)
-        self.tf = Transformer(dim_embedding, n_heads, n_layers,n_layers,dim_hidden,dropout,normcls)
+        self.tf = Transformer(dim_embedding, n_heads, n_layers,n_layers,dim_hidden,dropout,normclspre,normclspost,normpos)
         self.Wlogits = nn.Linear(dim_embedding, n_tokens_tgt)
 
 
