@@ -1,0 +1,281 @@
+Layer,Position,Epoch,Train Loss,Eval Loss,Alpha,DyTfn,exp_group,lr,dim_hidden,Exp_full_name,Ground Truth,Prediction,Train Top-1,Train Top-5,Train Top-10,Eval Top-1,Eval Top-5,Eval Top-10
+BatchNorm,Both,0,2.98,2.89,,,1,0.0001,256.0,BatchNormBoth,Tom doesn't often read books.,Tom n'a rien souvent.,0.5,0.68,0.73,0.51,0.69,0.74
+BatchNorm,Both,1,2.42,2.32,,,1,0.0001,256.0,BatchNormBoth,We've got a visitor.,Nous avons une pause.,0.57,0.75,0.8,0.57,0.76,0.8
+BatchNorm,Both,2,2.14,2.04,,,1,0.0001,256.0,BatchNormBoth,I think this isn't correct.,Je ne pense pas que ce soit.,0.6,0.79,0.83,0.61,0.79,0.84
+BatchNorm,Both,3,1.93,1.85,,,1,0.0001,256.0,BatchNormBoth,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.63,0.81,0.85,0.63,0.82,0.86
+BatchNorm,Both,4,1.77,1.73,,,1,0.0001,256.0,BatchNormBoth,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.65,0.83,0.87,0.65,0.83,0.87
+BatchNorm,Post,0,2.99,2.89,,,1,0.0001,256.0,BatchNormPost,Tom doesn't often read books.,Tom ne parle rien.,0.5,0.68,0.73,0.51,0.68,0.74
+BatchNorm,Post,1,2.44,2.34,,,1,0.0001,256.0,BatchNormPost,We've got a visitor.,Nous avons un moment.,0.56,0.75,0.79,0.57,0.75,0.8
+BatchNorm,Post,2,2.16,2.05,,,1,0.0001,256.0,BatchNormPost,I think this isn't correct.,Je ne pense pas que ce soit.,0.6,0.78,0.83,0.61,0.79,0.84
+BatchNorm,Post,3,1.95,1.87,,,1,0.0001,256.0,BatchNormPost,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.62,0.81,0.85,0.63,0.82,0.86
+BatchNorm,Post,4,1.78,1.74,,,1,0.0001,256.0,BatchNormPost,We're not really sure.,Nous n'sommes vraiment pas vraiment.,0.64,0.83,0.87,0.65,0.83,0.87
+BatchNorm,Pre,0,2.85,2.72,,,1,0.0001,256.0,BatchNormPre,Tom doesn't often read books.,Tom ne sait pas souvent.,0.51,0.7,0.75,0.52,0.71,0.76
+BatchNorm,Pre,1,2.31,2.22,,,1,0.0001,256.0,BatchNormPre,We've got a visitor.,Nous avons une pause.,0.57,0.76,0.81,0.58,0.77,0.82
+BatchNorm,Pre,2,2.05,1.96,,,1,0.0001,256.0,BatchNormPre,I think this isn't correct.,Je ne pense pas que ce soit.,0.6,0.79,0.84,0.61,0.8,0.85
+BatchNorm,Pre,3,1.85,1.79,,,1,0.0001,256.0,BatchNormPre,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.63,0.82,0.86,0.64,0.82,0.86
+BatchNorm,Pre,4,1.7,1.69,,,1,0.0001,256.0,BatchNormPre,We're not really sure.,Nous ne sommes pas vraiment sûre.,0.65,0.84,0.88,0.65,0.84,0.88
+DyT,Both,0,5.37,5.32,0.5,Tanh,1,0.0001,256.0,DyTBoth,Tom doesn't often read books.,.,0.21,0.33,0.4,0.21,0.33,0.4
+DyT,Both,1,5.02,4.98,0.5,Tanh,1,0.0001,256.0,DyTBoth,We've got a visitor.,.,0.21,0.39,0.47,0.21,0.39,0.47
+DyT,Both,2,4.84,4.79,0.5,Tanh,1,0.0001,256.0,DyTBoth,I think this isn't correct.,.,0.22,0.41,0.51,0.21,0.41,0.51
+DyT,Both,3,4.32,6.67,0.5,Tanh,1,0.0001,256.0,DyTBoth,You'd better do what Tom says.,,0.32,0.49,0.57,0.17,0.26,0.31
+DyT,Both,4,4.04,7.43,0.5,Tanh,1,0.0001,256.0,DyTBoth,We're not really sure.,Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous,0.34,0.53,0.61,0.17,0.25,0.28
+DyT,Both,0,5.89,5.85,0.05,Tanh,1,0.0001,256.0,DyTBothAlpha=0.05,Tom doesn't often read books.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Both,1,5.82,5.78,0.05,Tanh,1,0.0001,256.0,DyTBothAlpha=0.05,We've got a visitor.,,0.11,0.28,0.35,0.11,0.28,0.35
+DyT,Both,2,5.66,5.6,0.05,Tanh,1,0.0001,256.0,DyTBothAlpha=0.05,I think this isn't correct.,,0.11,0.3,0.39,0.11,0.3,0.39
+DyT,Both,3,5.53,5.5,0.05,Tanh,1,0.0001,256.0,DyTBothAlpha=0.05,You'd better do what Tom says.,,0.11,0.33,0.42,0.1,0.32,0.41
+DyT,Both,4,5.29,5.5,0.05,Tanh,1,0.0001,256.0,DyTBothAlpha=0.05,We're not really sure.,,0.13,0.37,0.46,0.09,0.32,0.43
+DyT,Both,0,5.75,5.71,0.5,Hardtanh,1,0.0001,256.0,DyTBothHardtanh,Tom doesn't often read books.,,0.11,0.29,0.37,0.11,0.3,0.37
+DyT,Both,1,4.96,4.91,0.5,Hardtanh,1,0.0001,256.0,DyTBothHardtanh,We've got a visitor.,.,0.22,0.4,0.49,0.22,0.41,0.49
+DyT,Both,2,4.13,4.03,0.5,Hardtanh,1,0.0001,256.0,DyTBothHardtanh,I think this isn't correct.,Je pense pas pas.,0.35,0.52,0.58,0.36,0.52,0.59
+DyT,Both,3,3.74,3.63,0.5,Hardtanh,1,0.0001,256.0,DyTBothHardtanh,You'd better do what Tom says.,Tu pouvez que Tom que Tom que Tom.,0.39,0.57,0.63,0.4,0.57,0.64
+DyT,Both,4,3.44,3.37,0.5,Hardtanh,1,0.0001,256.0,DyTBothHardtanh,We're not really sure.,Nous ne sommes pas pas.,0.42,0.61,0.67,0.42,0.61,0.67
+DyT,Both,0,5.89,5.85,0.05,Hardtanh,1,0.0001,256.0,DyTBothHardtanhAlpha=0.05,Tom doesn't often read books.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Both,1,5.8,5.76,0.05,Hardtanh,1,0.0001,256.0,DyTBothHardtanhAlpha=0.05,We've got a visitor.,,0.11,0.28,0.35,0.11,0.28,0.36
+DyT,Both,2,5.66,5.6,0.05,Hardtanh,1,0.0001,256.0,DyTBothHardtanhAlpha=0.05,I think this isn't correct.,,0.11,0.3,0.39,0.11,0.3,0.39
+DyT,Both,3,5.56,5.5,0.05,Hardtanh,1,0.0001,256.0,DyTBothHardtanhAlpha=0.05,You'd better do what Tom says.,,0.11,0.32,0.41,0.1,0.32,0.41
+DyT,Both,4,5.32,5.52,0.05,Hardtanh,1,0.0001,256.0,DyTBothHardtanhAlpha=0.05,We're not really sure.,,0.12,0.37,0.46,0.09,0.32,0.44
+DyT,Both,0,5.66,5.58,0.5,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanh,Tom doesn't often read books.,,0.09,0.31,0.4,0.09,0.31,0.4
+DyT,Both,1,4.27,4.19,0.5,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanh,We've got a visitor.,,0.34,0.49,0.56,0.34,0.5,0.56
+DyT,Both,2,3.86,3.77,0.5,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanh,I think this isn't correct.,Je ne pense pas pas.,0.38,0.55,0.62,0.38,0.56,0.62
+DyT,Both,3,3.58,3.46,0.5,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanh,You'd better do what Tom says.,Tu as que Tom que Tom que Tom Tom.,0.41,0.59,0.65,0.42,0.6,0.66
+DyT,Both,4,3.31,3.23,0.5,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanh,We're not really sure.,Nous ne sommes pas sûr.,0.44,0.63,0.69,0.44,0.63,0.69
+DyT,Both,0,5.89,5.85,0.05,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanhAlpha=0.05,Tom doesn't often read books.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Both,1,5.8,5.76,0.05,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanhAlpha=0.05,We've got a visitor.,,0.11,0.28,0.35,0.11,0.28,0.36
+DyT,Both,2,5.66,5.6,0.05,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanhAlpha=0.05,I think this isn't correct.,,0.11,0.3,0.39,0.11,0.3,0.39
+DyT,Both,3,5.56,5.5,0.05,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanhAlpha=0.05,You'd better do what Tom says.,,0.11,0.32,0.41,0.1,0.32,0.41
+DyT,Both,4,5.32,5.48,0.05,LeakyHardtanh,1,0.0001,256.0,DyTBothLeakyHardtanhAlpha=0.05,We're not really sure.,,0.12,0.37,0.46,0.09,0.33,0.44
+DyT,Post,0,5.69,5.65,0.5,Tanh,1,0.0001,256.0,DyTPost,Tom doesn't often read books.,,0.11,0.3,0.39,0.11,0.31,0.38
+DyT,Post,1,4.77,5.92,0.5,Tanh,1,0.0001,256.0,DyTPost,We've got a visitor.,Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous sommes,0.27,0.43,0.51,0.17,0.29,0.35
+DyT,Post,2,4.42,7.76,0.5,Tanh,1,0.0001,256.0,DyTPost,I think this isn't correct.,Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je,0.3,0.48,0.55,0.17,0.23,0.27
+DyT,Post,3,4.14,4.94,0.5,Tanh,1,0.0001,256.0,DyTPost,You'd better do what Tom says.,Tu Tu Tu Tu Tu es.,0.34,0.52,0.59,0.23,0.41,0.51
+DyT,Post,4,3.76,3.71,0.5,Tanh,1,0.0001,256.0,DyTPost,We're not really sure.,Nous Nous ne sommes pas pas.,0.38,0.57,0.64,0.37,0.57,0.64
+DyT,Post,0,5.89,5.85,0.05,Tanh,1,0.0001,256.0,DyTPostAlpha=0.05,Tom doesn't often read books.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Post,1,5.88,5.84,0.05,Tanh,1,0.0001,256.0,DyTPostAlpha=0.05,We've got a visitor.,,0.11,0.26,0.33,0.11,0.26,0.33
+DyT,Post,2,5.65,5.6,0.05,Tanh,1,0.0001,256.0,DyTPostAlpha=0.05,I think this isn't correct.,,0.11,0.3,0.38,0.11,0.3,0.38
+DyT,Post,3,5.56,5.55,0.05,Tanh,1,0.0001,256.0,DyTPostAlpha=0.05,You'd better do what Tom says.,,0.11,0.32,0.4,0.1,0.31,0.39
+DyT,Post,4,5.36,5.72,0.05,Tanh,1,0.0001,256.0,DyTPostAlpha=0.05,We're not really sure.,Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous,0.13,0.36,0.45,0.07,0.25,0.35
+DyT,Post,0,5.66,5.61,0.5,Hardtanh,1,0.0001,256.0,DyTPostHardtanh,Tom doesn't often read books.,,0.11,0.32,0.4,0.11,0.32,0.4
+DyT,Post,1,4.26,4.21,0.5,Hardtanh,1,0.0001,256.0,DyTPostHardtanh,We've got a visitor.,Nous avons un beaucoup.,0.34,0.49,0.55,0.34,0.5,0.56
+DyT,Post,2,3.86,3.77,0.5,Hardtanh,1,0.0001,256.0,DyTPostHardtanh,I think this isn't correct.,Je ne ai pas pas.,0.38,0.55,0.61,0.38,0.55,0.61
+DyT,Post,3,3.58,3.49,0.5,Hardtanh,1,0.0001,256.0,DyTPostHardtanh,You'd better do what Tom says.,Tu as dit ce ce faire.,0.41,0.58,0.64,0.41,0.59,0.65
+DyT,Post,4,3.34,3.26,0.5,Hardtanh,1,0.0001,256.0,DyTPostHardtanh,We're not really sure.,Nous n'sommes pas pas pas.,0.44,0.62,0.68,0.44,0.62,0.68
+DyT,Post,0,5.89,5.85,0.05,Hardtanh,1,0.0001,256.0,DyTPostHardtanhAlpha=0.05,Tom doesn't often read books.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Post,1,5.88,5.85,0.05,Hardtanh,1,0.0001,256.0,DyTPostHardtanhAlpha=0.05,We've got a visitor.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Post,2,5.78,5.76,0.05,Hardtanh,1,0.0001,256.0,DyTPostHardtanhAlpha=0.05,I think this isn't correct.,,0.11,0.28,0.35,0.11,0.28,0.35
+DyT,Post,3,5.73,5.82,0.05,Hardtanh,1,0.0001,256.0,DyTPostHardtanhAlpha=0.05,You'd better do what Tom says.,,0.11,0.29,0.37,0.1,0.27,0.36
+DyT,Post,4,5.56,6.64,0.05,Hardtanh,1,0.0001,256.0,DyTPostHardtanhAlpha=0.05,We're not really sure.,Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je,0.13,0.32,0.39,0.03,0.07,0.12
+DyT,Post,0,5.64,5.59,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanh,Tom doesn't often read books.,,0.11,0.32,0.4,0.11,0.32,0.4
+DyT,Post,1,4.74,5.7,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanh,We've got a visitor.,.,0.27,0.44,0.51,0.17,0.28,0.36
+DyT,Post,2,4.06,3.95,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanh,I think this isn't correct.,Je pense pas.,0.35,0.53,0.59,0.36,0.53,0.6
+DyT,Post,3,3.65,3.54,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanh,You'd better do what Tom says.,Tu avez dit ce qu'Tom.,0.4,0.58,0.64,0.4,0.59,0.65
+DyT,Post,4,3.35,3.25,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanh,We're not really sure.,Nous ne sommes pas pas vraiment.,0.43,0.62,0.68,0.43,0.63,0.69
+DyT,Post,0,5.89,5.85,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanhAlpha=0.05,Tom doesn't often read books.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Post,1,5.88,5.85,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanhAlpha=0.05,We've got a visitor.,,0.11,0.26,0.33,0.11,0.25,0.33
+DyT,Post,2,5.78,5.76,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanhAlpha=0.05,I think this isn't correct.,,0.11,0.28,0.35,0.11,0.28,0.36
+DyT,Post,3,5.73,5.83,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanhAlpha=0.05,You'd better do what Tom says.,,0.11,0.29,0.37,0.09,0.26,0.35
+DyT,Post,4,5.55,6.67,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPostLeakyHardtanhAlpha=0.05,We're not really sure.,Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je,0.13,0.32,0.39,0.03,0.07,0.12
+DyT,Pre,0,2.95,2.87,0.5,Tanh,1,0.0001,256.0,DyTPre,Tom doesn't often read books.,Tom n'a pas faim.,0.49,0.68,0.73,0.5,0.69,0.74
+DyT,Pre,1,2.42,2.35,0.5,Tanh,1,0.0001,256.0,DyTPre,We've got a visitor.,Nous avons une pause.,0.55,0.75,0.79,0.56,0.75,0.8
+DyT,Pre,2,2.15,2.08,0.5,Tanh,1,0.0001,256.0,DyTPre,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.78,0.83,0.6,0.79,0.83
+DyT,Pre,3,1.94,1.91,0.5,Tanh,1,0.0001,256.0,DyTPre,You'd better do what Tom says.,Tu ferais mieux de ce que Tom ferais mieux.,0.62,0.81,0.85,0.62,0.81,0.85
+DyT,Pre,4,1.78,1.78,0.5,Tanh,1,0.0001,256.0,DyTPre,We're not really sure.,Nous ne sommes pas vraiment vraiment.,0.64,0.83,0.87,0.64,0.83,0.87
+DyT,Pre,0,3.2,3.13,0.05,Tanh,1,0.0001,256.0,DyTPreAlpha=0.05,Tom doesn't often read books.,Tom n'a pas à Tom.,0.46,0.65,0.71,0.47,0.65,0.71
+DyT,Pre,1,2.59,2.53,0.05,Tanh,1,0.0001,256.0,DyTPreAlpha=0.05,We've got a visitor.,Nous avons une pause.,0.53,0.72,0.78,0.53,0.73,0.78
+DyT,Pre,2,2.27,2.21,0.05,Tanh,1,0.0001,256.0,DyTPreAlpha=0.05,I think this isn't correct.,Je ne pense pas que ce soit.,0.56,0.76,0.82,0.57,0.77,0.82
+DyT,Pre,3,2.04,2.02,0.05,Tanh,1,0.0001,256.0,DyTPreAlpha=0.05,You'd better do what Tom says.,Tu ferais mieux de ce que Tom.,0.6,0.79,0.84,0.6,0.8,0.84
+DyT,Pre,4,1.86,1.87,0.05,Tanh,1,0.0001,256.0,DyTPreAlpha=0.05,We're not really sure.,Nous ne sommes vraiment pas vraiment.,0.62,0.82,0.86,0.62,0.81,0.86
+DyT,Pre,0,2.94,2.84,0.5,Hardtanh,1,0.0001,256.0,DyTPreHardtanh,Tom doesn't often read books.,Tom n'a pas faim.,0.5,0.68,0.74,0.5,0.69,0.74
+DyT,Pre,1,2.41,2.34,0.5,Hardtanh,1,0.0001,256.0,DyTPreHardtanh,We've got a visitor.,Nous avons une pause.,0.55,0.75,0.8,0.56,0.75,0.8
+DyT,Pre,2,2.14,2.07,0.5,Hardtanh,1,0.0001,256.0,DyTPreHardtanh,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.78,0.83,0.6,0.79,0.83
+DyT,Pre,3,1.93,1.9,0.5,Hardtanh,1,0.0001,256.0,DyTPreHardtanh,You'd better do what Tom says.,Tu ferais mieux de ce que Tom ferais mieux.,0.62,0.81,0.85,0.62,0.81,0.85
+DyT,Pre,4,1.78,1.78,0.5,Hardtanh,1,0.0001,256.0,DyTPreHardtanh,We're not really sure.,Nous ne sommes vraiment pas vraiment.,0.64,0.83,0.87,0.64,0.83,0.87
+DyT,Pre,0,3.2,3.12,0.05,Hardtanh,1,0.0001,256.0,DyTPreHardtanhAlpha=0.05,Tom doesn't often read books.,Tom n'a pas à Tom.,0.46,0.65,0.71,0.47,0.65,0.71
+DyT,Pre,1,2.59,2.53,0.05,Hardtanh,1,0.0001,256.0,DyTPreHardtanhAlpha=0.05,We've got a visitor.,Nous avons une pause.,0.53,0.72,0.78,0.53,0.73,0.78
+DyT,Pre,2,2.27,2.21,0.05,Hardtanh,1,0.0001,256.0,DyTPreHardtanhAlpha=0.05,I think this isn't correct.,Je ne pense pas que ce soit.,0.56,0.77,0.82,0.57,0.77,0.82
+DyT,Pre,3,2.03,2.01,0.05,Hardtanh,1,0.0001,256.0,DyTPreHardtanhAlpha=0.05,You'd better do what Tom says.,Vous feriez mieux de Tom.,0.6,0.79,0.84,0.6,0.8,0.84
+DyT,Pre,4,1.86,1.87,0.05,Hardtanh,1,0.0001,256.0,DyTPreHardtanhAlpha=0.05,We're not really sure.,Nous sommes vraiment sûr.,0.62,0.82,0.86,0.62,0.81,0.86
+DyT,Pre,0,2.93,2.84,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanh,Tom doesn't often read books.,Tom n'a pas faim.,0.5,0.68,0.74,0.5,0.69,0.74
+DyT,Pre,1,2.41,2.34,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanh,We've got a visitor.,Nous avons une pause.,0.55,0.75,0.8,0.56,0.75,0.8
+DyT,Pre,2,2.14,2.07,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanh,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.78,0.83,0.6,0.79,0.83
+DyT,Pre,3,1.93,1.9,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanh,You'd better do what Tom says.,Tu ferais mieux de ce que Tom ferait mieux.,0.62,0.81,0.85,0.62,0.81,0.85
+DyT,Pre,4,1.78,1.78,0.5,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanh,We're not really sure.,Nous ne sommes vraiment pas vraiment.,0.64,0.83,0.87,0.64,0.83,0.87
+DyT,Pre,0,3.2,3.12,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanhAlpha=0.05,Tom doesn't often read books.,Tom n'a pas à Tom.,0.46,0.65,0.71,0.47,0.65,0.71
+DyT,Pre,1,2.59,2.53,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanhAlpha=0.05,We've got a visitor.,Nous avons une pause.,0.53,0.72,0.78,0.53,0.73,0.78
+DyT,Pre,2,2.27,2.21,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanhAlpha=0.05,I think this isn't correct.,Je ne pense pas que ce soit.,0.56,0.77,0.82,0.57,0.77,0.82
+DyT,Pre,3,2.03,2.01,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanhAlpha=0.05,You'd better do what Tom says.,Vous feriez mieux de Tom.,0.6,0.79,0.84,0.6,0.8,0.84
+DyT,Pre,4,1.86,1.87,0.05,LeakyHardtanh,1,0.0001,256.0,DyTPreLeakyHardtanhAlpha=0.05,We're not really sure.,Nous sommes vraiment sûr.,0.62,0.82,0.86,0.62,0.81,0.86
+Identity,Both,0,2.89,2.73,,,1,0.0001,256.0,Identity,Tom doesn't often read books.,Tom ne sait rien.,0.51,0.69,0.74,0.52,0.7,0.76
+Identity,Both,1,2.36,2.24,,,1,0.0001,256.0,Identity,We've got a visitor.,Nous avons un verre.,0.56,0.75,0.8,0.58,0.77,0.81
+Identity,Both,2,2.1,1.98,,,1,0.0001,256.0,Identity,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.79,0.83,0.61,0.8,0.84
+Identity,Both,3,1.9,1.82,,,1,0.0001,256.0,Identity,You'd better do what Tom says.,Tu ferais mieux de faire Tom.,0.62,0.81,0.86,0.63,0.82,0.86
+Identity,Both,4,1.74,1.71,,,1,0.0001,256.0,Identity,We're not really sure.,Nous ne sommes pas vraiment sûre.,0.64,0.83,0.87,0.65,0.84,0.87
+Layernorm,Both,0,3.13,3.03,,,1,0.0001,256.0,LayernormBoth,Tom doesn't often read books.,Tom n'a pas besoin de Mary.,0.48,0.66,0.71,0.49,0.67,0.72
+Layernorm,Both,1,2.53,2.44,,,1,0.0001,256.0,LayernormBoth,We've got a visitor.,Nous avons une tasse.,0.55,0.74,0.78,0.56,0.74,0.79
+Layernorm,Both,2,2.22,2.12,,,1,0.0001,256.0,LayernormBoth,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.78,0.82,0.6,0.78,0.83
+Layernorm,Both,3,1.99,1.91,,,1,0.0001,256.0,LayernormBoth,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.62,0.81,0.85,0.63,0.81,0.85
+Layernorm,Both,4,1.81,1.77,,,1,0.0001,256.0,LayernormBoth,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.64,0.83,0.87,0.65,0.83,0.87
+Layernorm,Post,0,3.13,3.04,,,1,0.0001,256.0,LayernormPost,Tom doesn't often read books.,Tom n'a pas besoin de Mary.,0.48,0.66,0.71,0.49,0.67,0.72
+Layernorm,Post,1,2.53,2.44,,,1,0.0001,256.0,LayernormPost,We've got a visitor.,Nous avons une tasse.,0.55,0.74,0.78,0.56,0.74,0.79
+Layernorm,Post,2,2.22,2.13,,,1,0.0001,256.0,LayernormPost,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.78,0.82,0.6,0.78,0.83
+Layernorm,Post,3,1.99,1.92,,,1,0.0001,256.0,LayernormPost,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.62,0.81,0.85,0.62,0.81,0.85
+Layernorm,Post,4,1.81,1.77,,,1,0.0001,256.0,LayernormPost,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.64,0.83,0.87,0.64,0.83,0.87
+Layernorm,Pre,0,2.85,2.74,,,1,0.0001,256.0,LayernormPre,Tom doesn't often read books.,Tom ne sait pas souvent.,0.51,0.69,0.75,0.52,0.7,0.75
+Layernorm,Pre,1,2.33,2.24,,,1,0.0001,256.0,LayernormPre,We've got a visitor.,Nous avons une pause.,0.57,0.76,0.81,0.58,0.77,0.81
+Layernorm,Pre,2,2.06,1.98,,,1,0.0001,256.0,LayernormPre,I think this isn't correct.,Je ne pense pas que ce soit.,0.6,0.79,0.84,0.61,0.8,0.84
+Layernorm,Pre,3,1.86,1.82,,,1,0.0001,256.0,LayernormPre,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.63,0.82,0.86,0.63,0.82,0.86
+Layernorm,Pre,4,1.71,1.7,,,1,0.0001,256.0,LayernormPre,We're not really sure.,Nous ne sommes pas vraiment sûres.,0.65,0.84,0.88,0.65,0.84,0.88
+RMSNorm,Both,0,3.15,3.05,,,1,0.0001,256.0,RMSNormBoth,Tom doesn't often read books.,Tom n'a pas besoin de Mary.,0.48,0.66,0.71,0.49,0.66,0.72
+RMSNorm,Both,1,2.54,2.45,,,1,0.0001,256.0,RMSNormBoth,We've got a visitor.,Nous avons une tasse.,0.55,0.74,0.78,0.56,0.74,0.79
+RMSNorm,Both,2,2.22,2.13,,,1,0.0001,256.0,RMSNormBoth,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.78,0.82,0.6,0.78,0.83
+RMSNorm,Both,3,2.0,1.92,,,1,0.0001,256.0,RMSNormBoth,You'd better do what Tom says.,Vous feriez mieux de faire ce que Tom dit.,0.62,0.81,0.85,0.62,0.81,0.85
+RMSNorm,Both,4,1.81,1.77,,,1,0.0001,256.0,RMSNormBoth,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.64,0.83,0.87,0.64,0.83,0.87
+RMSNorm,Post,0,3.15,3.05,,,1,0.0001,256.0,RMSNormPost,Tom doesn't often read books.,Tom n'a pas besoin de Mary.,0.48,0.66,0.71,0.49,0.66,0.72
+RMSNorm,Post,1,2.55,2.45,,,1,0.0001,256.0,RMSNormPost,We've got a visitor.,Nous avons une tasse.,0.55,0.74,0.78,0.56,0.74,0.79
+RMSNorm,Post,2,2.23,2.13,,,1,0.0001,256.0,RMSNormPost,I think this isn't correct.,Je ne pense pas que ce soit.,0.59,0.78,0.82,0.6,0.78,0.83
+RMSNorm,Post,3,2.0,1.93,,,1,0.0001,256.0,RMSNormPost,You'd better do what Tom says.,Vous feriez mieux de faire ce que Tom dit.,0.62,0.81,0.85,0.62,0.81,0.85
+RMSNorm,Post,4,1.82,1.78,,,1,0.0001,256.0,RMSNormPost,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.64,0.83,0.86,0.64,0.83,0.87
+RMSNorm,Pre,0,2.85,2.74,,,1,0.0001,256.0,RMSNormPre,Tom doesn't often read books.,Tom ne sait pas souvent.,0.51,0.69,0.75,0.52,0.7,0.75
+RMSNorm,Pre,1,2.33,2.25,,,1,0.0001,256.0,RMSNormPre,We've got a visitor.,Nous avons un verre.,0.57,0.76,0.81,0.58,0.76,0.81
+RMSNorm,Pre,2,2.07,1.98,,,1,0.0001,256.0,RMSNormPre,I think this isn't correct.,Je ne pense pas que ce soit.,0.6,0.79,0.84,0.61,0.8,0.84
+RMSNorm,Pre,3,1.86,1.82,,,1,0.0001,256.0,RMSNormPre,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.63,0.82,0.86,0.63,0.82,0.86
+RMSNorm,Pre,4,1.71,1.7,,,1,0.0001,256.0,RMSNormPre,We're not really sure.,Nous ne sommes pas vraiment sûres.,0.65,0.84,0.88,0.65,0.84,0.88
+DyT,Post,0,5.51,5.61,0.5,Tanh,2,0.0002,256.0,2-DyTPost-lr=0.0002,Tom doesn't often read books.,,0.13,0.34,0.42,0.09,0.31,0.41
+DyT,Post,1,4.64,10.46,0.5,Tanh,2,0.0002,256.0,2-DyTPost-lr=0.0002,We've got a visitor.,Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous,0.22,0.47,0.54,0.06,0.09,0.12
+DyT,Post,2,4.28,12.27,0.5,Tanh,2,0.0002,256.0,2-DyTPost-lr=0.0002,I think this isn't correct.,Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je,0.25,0.51,0.6,0.07,0.1,0.11
+DyT,Post,3,4.04,13.32,0.5,Tanh,2,0.0002,256.0,2-DyTPost-lr=0.0002,You'd better do what Tom says.,Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu Tu,0.26,0.54,0.63,0.07,0.1,0.11
+DyT,Post,4,3.81,13.81,0.5,Tanh,2,0.0002,256.0,2-DyTPost-lr=0.0002,We're not really sure.,Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous,0.27,0.57,0.66,0.07,0.1,0.11
+DyT,Post,0,5.24,8.93,0.5,Tanh,2,0.0004,256.0,2-DyTPost-lr=0.0004,Tom doesn't often read books.,Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom Tom,0.16,0.38,0.45,0.04,0.07,0.09
+DyT,Post,1,4.5,12.22,0.5,Tanh,2,0.0004,256.0,2-DyTPost-lr=0.0004,We've got a visitor.,Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous,0.22,0.48,0.57,0.06,0.1,0.12
+DyT,Post,2,4.19,12.64,0.5,Tanh,2,0.0004,256.0,2-DyTPost-lr=0.0004,I think this isn't correct.,Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je,0.23,0.51,0.61,0.07,0.11,0.13
+DyT,Post,3,3.95,14.88,0.5,Tanh,2,0.0004,256.0,2-DyTPost-lr=0.0004,You'd better do what Tom says.,Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous Vous,0.24,0.54,0.64,0.07,0.1,0.11
+DyT,Post,4,3.73,11.65,0.5,Tanh,2,0.0004,256.0,2-DyTPost-lr=0.0004,We're not really sure.,Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous Nous,0.24,0.56,0.68,0.07,0.13,0.16
+DyT,Post,0,5.89,5.85,0.5,Tanh,2,2.5e-05,256.0,2-DyTPost-lr=2.5e-05,Tom doesn't often read books.,,0.11,0.26,0.33,0.11,0.26,0.33
+DyT,Post,1,5.5,5.46,0.5,Tanh,2,2.5e-05,256.0,2-DyTPost-lr=2.5e-05,We've got a visitor.,.,0.2,0.3,0.37,0.2,0.3,0.37
+DyT,Post,2,5.26,5.21,0.5,Tanh,2,2.5e-05,256.0,2-DyTPost-lr=2.5e-05,I think this isn't correct.,..,0.22,0.35,0.42,0.22,0.35,0.42
+DyT,Post,3,4.97,4.88,0.5,Tanh,2,2.5e-05,256.0,2-DyTPost-lr=2.5e-05,You'd better do what Tom says.,Tom Tom Tom.,0.27,0.39,0.46,0.28,0.4,0.46
+DyT,Post,4,4.62,4.56,0.5,Tanh,2,2.5e-05,256.0,2-DyTPost-lr=2.5e-05,We're not really sure.,Nous pas pas pas.,0.31,0.44,0.51,0.31,0.44,0.51
+DyT,Post,0,5.69,5.64,0.5,Tanh,2,5e-05,256.0,2-DyTPost-lr=5e-05,Tom doesn't often read books.,,0.19,0.28,0.36,0.19,0.28,0.36
+DyT,Post,1,5.22,5.18,0.5,Tanh,2,5e-05,256.0,2-DyTPost-lr=5e-05,We've got a visitor.,.,0.21,0.36,0.44,0.21,0.36,0.44
+DyT,Post,2,5.07,5.01,0.5,Tanh,2,5e-05,256.0,2-DyTPost-lr=5e-05,I think this isn't correct.,.,0.21,0.39,0.47,0.21,0.39,0.47
+DyT,Post,3,4.95,4.88,0.5,Tanh,2,5e-05,256.0,2-DyTPost-lr=5e-05,You'd better do what Tom says.,.,0.21,0.4,0.49,0.21,0.41,0.49
+DyT,Post,4,4.51,4.44,0.5,Tanh,2,5e-05,256.0,2-DyTPost-lr=5e-05,We're not really sure.,Nous Nous pas.,0.31,0.48,0.55,0.31,0.48,0.55
+Layernorm,Post,0,2.59,2.48,,,2,0.0002,256.0,2-LayernormPost-lr=0.0002,Tom doesn't often read books.,Tom ne parle pas souvent.,0.55,0.73,0.78,0.55,0.74,0.79
+Layernorm,Post,1,2.04,1.96,,,2,0.0002,256.0,2-LayernormPost-lr=0.0002,We've got a visitor.,Nous avons une promenade.,0.61,0.8,0.84,0.62,0.81,0.85
+Layernorm,Post,2,1.77,1.71,,,2,0.0002,256.0,2-LayernormPost-lr=0.0002,I think this isn't correct.,Je ne pense pas que ce soit correct.,0.64,0.83,0.87,0.65,0.84,0.87
+Layernorm,Post,3,1.59,1.55,,,2,0.0002,256.0,2-LayernormPost-lr=0.0002,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.67,0.86,0.89,0.67,0.86,0.89
+Layernorm,Post,4,1.45,1.46,,,2,0.0002,256.0,2-LayernormPost-lr=0.0002,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.69,0.87,0.91,0.69,0.87,0.9
+Layernorm,Post,0,2.15,2.05,,,2,0.0004,256.0,2-LayernormPost-lr=0.0004,Tom doesn't often read books.,Tom ne parle pas souvent.,0.6,0.79,0.83,0.61,0.8,0.84
+Layernorm,Post,1,1.7,1.64,,,2,0.0004,256.0,2-LayernormPost-lr=0.0004,We've got a visitor.,Nous avons une promenade.,0.65,0.84,0.88,0.66,0.85,0.88
+Layernorm,Post,2,1.5,1.47,,,2,0.0004,256.0,2-LayernormPost-lr=0.0004,I think this isn't correct.,Je pense que ce n'est pas correct.,0.68,0.87,0.9,0.68,0.87,0.9
+Layernorm,Post,3,1.34,1.36,,,2,0.0004,256.0,2-LayernormPost-lr=0.0004,You'd better do what Tom says.,Vous feriez mieux de faire Tom.,0.7,0.89,0.92,0.7,0.88,0.91
+Layernorm,Post,4,1.24,1.3,,,2,0.0004,256.0,2-LayernormPost-lr=0.0004,We're not really sure.,Nous ne sommes pas vraiment sûres.,0.72,0.9,0.93,0.71,0.89,0.92
+Layernorm,Post,0,4.33,4.25,,,2,2.5e-05,256.0,2-LayernormPost-lr=2.5e-05,Tom doesn't often read books.,Tom n'est pas que Tom.,0.38,0.51,0.56,0.38,0.51,0.56
+Layernorm,Post,1,3.69,3.59,,,2,2.5e-05,256.0,2-LayernormPost-lr=2.5e-05,We've got a visitor.,Nous avons un peu.,0.43,0.59,0.64,0.43,0.6,0.65
+Layernorm,Post,2,3.33,3.23,,,2,2.5e-05,256.0,2-LayernormPost-lr=2.5e-05,I think this isn't correct.,Je ne pense pas que ça.,0.46,0.63,0.69,0.47,0.64,0.69
+Layernorm,Post,3,3.1,2.98,,,2,2.5e-05,256.0,2-LayernormPost-lr=2.5e-05,You'd better do what Tom says.,Tu as fait ce que Tom va faire.,0.48,0.66,0.71,0.49,0.67,0.72
+Layernorm,Post,4,2.88,2.79,,,2,2.5e-05,256.0,2-LayernormPost-lr=2.5e-05,We're not really sure.,Nous ne sommes pas vraiment vraiment.,0.51,0.69,0.74,0.52,0.69,0.74
+Layernorm,Post,0,3.72,3.62,,,2,5e-05,256.0,2-LayernormPost-lr=5e-05,Tom doesn't often read books.,Tom n'a pas à Tom.,0.43,0.59,0.64,0.43,0.6,0.65
+Layernorm,Post,1,3.1,3.0,,,2,5e-05,256.0,2-LayernormPost-lr=5e-05,We've got a visitor.,Nous avons une voiture.,0.48,0.66,0.72,0.49,0.67,0.72
+Layernorm,Post,2,2.76,2.66,,,2,5e-05,256.0,2-LayernormPost-lr=5e-05,I think this isn't correct.,Je ne pense pas que ce soit.,0.52,0.71,0.76,0.53,0.71,0.76
+Layernorm,Post,3,2.53,2.43,,,2,5e-05,256.0,2-LayernormPost-lr=5e-05,You'd better do what Tom says.,Tu ferais mieux de quoi Tom.,0.55,0.74,0.78,0.56,0.74,0.79
+Layernorm,Post,4,2.31,2.24,,,2,5e-05,256.0,2-LayernormPost-lr=5e-05,We're not really sure.,Nous n'sommes pas vraiment sûr.,0.58,0.77,0.81,0.58,0.77,0.81
+DyT,Post,0,5.85,5.81,0.5,Hardtanh,2,0.0001,512.0,2-DyTPostHardtanhAlpha=0.5-dim_hidden=512,I saw Tom kill the neighbor's cat.,,0.11,0.28,0.34,0.11,0.28,0.34
+DyT,Post,1,4.6,4.49,0.5,Hardtanh,2,0.0001,512.0,2-DyTPostHardtanhAlpha=0.5-dim_hidden=512,The thief slipped into the house.,La a..,0.31,0.46,0.52,0.32,0.46,0.53
+DyT,Post,2,3.89,3.82,0.5,Hardtanh,2,0.0001,512.0,2-DyTPostHardtanhAlpha=0.5-dim_hidden=512,I debated whether I should say anything.,Je pensais que je je je je je je ce que je je je je je je je ce.,0.38,0.55,0.61,0.38,0.55,0.61
+DyT,Post,3,3.57,3.45,0.5,Hardtanh,2,0.0001,512.0,2-DyTPostHardtanhAlpha=0.5-dim_hidden=512,We don't have the same values.,Nous ne avons pas le problème.,0.41,0.59,0.65,0.42,0.6,0.66
+DyT,Post,4,3.28,3.22,0.5,Hardtanh,2,0.0001,512.0,2-DyTPostHardtanhAlpha=0.5-dim_hidden=512,There are few houses around here.,Il y a beaucoup ici.,0.44,0.63,0.69,0.44,0.63,0.69
+DyT,Post,0,5.57,5.56,0.5,Tanh,2,0.0001,512.0,2-DyTPostAlpha=0.5-dim_hidden=512,I saw Tom kill the neighbor's cat.,,0.11,0.33,0.42,0.1,0.33,0.42
+DyT,Post,1,4.97,7.66,0.5,Tanh,2,0.0001,512.0,2-DyTPostAlpha=0.5-dim_hidden=512,The thief slipped into the house.,Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le Le,0.19,0.43,0.51,0.07,0.16,0.21
+DyT,Post,2,4.53,8.89,0.5,Tanh,2,0.0001,512.0,2-DyTPostAlpha=0.5-dim_hidden=512,I debated whether I should say anything.,Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je Je,0.24,0.48,0.56,0.11,0.18,0.22
+DyT,Post,3,3.98,3.87,0.5,Tanh,2,0.0001,512.0,2-DyTPostAlpha=0.5-dim_hidden=512,We don't have the same values.,Nous avons pas.,0.36,0.54,0.61,0.37,0.55,0.62
+DyT,Post,4,3.62,3.56,0.5,Tanh,2,0.0001,512.0,2-DyTPostAlpha=0.5-dim_hidden=512,There are few houses around here.,Il y y y a ici.,0.4,0.59,0.66,0.4,0.59,0.66
+DyT,Pre,0,2.92,2.82,1.0,Tanh,2,0.0001,256.0,2-DyTPreAlpha=1.0,Tom doesn't often read books.,Tom n'a pas faim.,0.5,0.68,0.74,0.51,0.69,0.74
+DyT,Pre,1,2.4,2.33,1.0,Tanh,2,0.0001,256.0,2-DyTPreAlpha=1.0,We've got a visitor.,Nous avons un accident.,0.56,0.75,0.8,0.56,0.75,0.8
+DyT,Pre,2,2.14,2.06,1.0,Tanh,2,0.0001,256.0,2-DyTPreAlpha=1.0,I think this isn't correct.,Je ne pense pas que ceci.,0.59,0.78,0.83,0.6,0.79,0.83
+DyT,Pre,3,1.93,1.9,1.0,Tanh,2,0.0001,256.0,2-DyTPreAlpha=1.0,You'd better do what Tom says.,Tu ferais mieux de ce que Tom dit mieux.,0.62,0.81,0.85,0.62,0.81,0.85
+DyT,Pre,4,1.77,1.78,1.0,Tanh,2,0.0001,256.0,2-DyTPreAlpha=1.0,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.64,0.83,0.87,0.64,0.83,0.87
+DyT,Pre,0,2.93,2.82,1.0,Hardtanh,2,0.0001,256.0,2-DyTPreHardtanhAlpha=1.0,Tom doesn't often read books.,Tom ne veut pas.,0.5,0.68,0.74,0.51,0.69,0.74
+DyT,Pre,1,2.41,2.34,1.0,Hardtanh,2,0.0001,256.0,2-DyTPreHardtanhAlpha=1.0,We've got a visitor.,Nous avons un accident.,0.56,0.75,0.8,0.56,0.75,0.8
+DyT,Pre,2,2.15,2.07,1.0,Hardtanh,2,0.0001,256.0,2-DyTPreHardtanhAlpha=1.0,I think this isn't correct.,Je ne pense pas que ceci.,0.59,0.78,0.83,0.6,0.79,0.83
+DyT,Pre,3,1.94,1.9,1.0,Hardtanh,2,0.0001,256.0,2-DyTPreHardtanhAlpha=1.0,You'd better do what Tom says.,Tu ferais mieux de ce que Tom ferais mieux.,0.62,0.81,0.85,0.62,0.81,0.85
+DyT,Pre,4,1.78,1.78,1.0,Hardtanh,2,0.0001,256.0,2-DyTPreHardtanhAlpha=1.0,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.64,0.83,0.87,0.64,0.83,0.87
+DyT,Pre,0,2.93,2.82,1.0,LeakyHardtanh,2,0.0001,256.0,2-DyTPreLeakyHardtanhAlpha=1.0,Tom doesn't often read books.,Tom ne veut pas.,0.5,0.68,0.74,0.51,0.69,0.74
+DyT,Pre,1,2.41,2.33,1.0,LeakyHardtanh,2,0.0001,256.0,2-DyTPreLeakyHardtanhAlpha=1.0,We've got a visitor.,Nous avons un accident.,0.56,0.75,0.8,0.56,0.75,0.8
+DyT,Pre,2,2.15,2.07,1.0,LeakyHardtanh,2,0.0001,256.0,2-DyTPreLeakyHardtanhAlpha=1.0,I think this isn't correct.,Je ne pense pas que ceci.,0.59,0.78,0.83,0.6,0.79,0.83
+DyT,Pre,3,1.94,1.9,1.0,LeakyHardtanh,2,0.0001,256.0,2-DyTPreLeakyHardtanhAlpha=1.0,You'd better do what Tom says.,Tu ferais mieux de ce que Tom dit mieux.,0.62,0.81,0.85,0.62,0.81,0.85
+DyT,Pre,4,1.79,1.78,1.0,LeakyHardtanh,2,0.0001,256.0,2-DyTPreLeakyHardtanhAlpha=1.0,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.64,0.83,0.87,0.64,0.83,0.87
+DyT,Post,0,4.02,3.93,1.0,Tanh,3,0.0001,256.0,3-DyTPostAlpha=1.0,Tom doesn't often read books.,Tom n'a pas que Tom.,0.38,0.52,0.58,0.38,0.53,0.58
+DyT,Post,1,3.32,3.23,1.0,Tanh,3,0.0001,256.0,3-DyTPostAlpha=1.0,We've got a visitor.,Nous avons un peu.,0.45,0.62,0.68,0.46,0.63,0.68
+DyT,Post,2,2.95,2.86,1.0,Tanh,3,0.0001,256.0,3-DyTPostAlpha=1.0,I think this isn't correct.,Je ne pense pas que c'est ceci.,0.49,0.67,0.73,0.5,0.68,0.73
+DyT,Post,3,2.66,2.56,1.0,Tanh,3,0.0001,256.0,3-DyTPostAlpha=1.0,You'd better do what Tom says.,Tu devrais dire ce que Tom veut faire.,0.53,0.71,0.76,0.54,0.72,0.77
+DyT,Post,4,2.41,2.33,1.0,Tanh,3,0.0001,256.0,3-DyTPostAlpha=1.0,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.56,0.75,0.79,0.57,0.75,0.8
+DyT,Post,0,3.7,3.6,1.0,Hardtanh,3,0.0001,256.0,3-DyTPostHardtanhAlpha=1.0,Tom doesn't often read books.,Tom n'a pas à Tom.,0.42,0.57,0.63,0.42,0.58,0.63
+DyT,Post,1,3.09,2.99,1.0,Hardtanh,3,0.0001,256.0,3-DyTPostHardtanhAlpha=1.0,We've got a visitor.,Nous sommes beaucoup.,0.48,0.65,0.71,0.48,0.66,0.71
+DyT,Post,2,2.73,2.64,1.0,Hardtanh,3,0.0001,256.0,3-DyTPostHardtanhAlpha=1.0,I think this isn't correct.,Je ne pense pas que ceci.,0.52,0.7,0.75,0.53,0.71,0.76
+DyT,Post,3,2.48,2.38,1.0,Hardtanh,3,0.0001,256.0,3-DyTPostHardtanhAlpha=1.0,You'd better do what Tom says.,Tu ferais mieux mieux de Tom.,0.55,0.74,0.79,0.56,0.74,0.79
+DyT,Post,4,2.25,2.18,1.0,Hardtanh,3,0.0001,256.0,3-DyTPostHardtanhAlpha=1.0,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.58,0.77,0.81,0.59,0.77,0.82
+DyT,Post,0,3.72,3.62,1.0,LeakyHardtanh,3,0.0001,256.0,3-DyTPostLeakyHardtanhAlpha=1.0,Tom doesn't often read books.,Tom n'a pas trop.,0.42,0.57,0.63,0.42,0.58,0.63
+DyT,Post,1,3.1,3.0,1.0,LeakyHardtanh,3,0.0001,256.0,3-DyTPostLeakyHardtanhAlpha=1.0,We've got a visitor.,Nous avons beaucoup.,0.48,0.65,0.71,0.48,0.66,0.71
+DyT,Post,2,2.74,2.64,1.0,LeakyHardtanh,3,0.0001,256.0,3-DyTPostLeakyHardtanhAlpha=1.0,I think this isn't correct.,Je ne pense pas que ce matin.,0.52,0.7,0.75,0.53,0.71,0.76
+DyT,Post,3,2.48,2.38,1.0,LeakyHardtanh,3,0.0001,256.0,3-DyTPostLeakyHardtanhAlpha=1.0,You'd better do what Tom says.,Tu ferais mieux d'aider Tom.,0.55,0.74,0.78,0.56,0.74,0.79
+DyT,Post,4,2.26,2.18,1.0,LeakyHardtanh,3,0.0001,256.0,3-DyTPostLeakyHardtanhAlpha=1.0,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.58,0.77,0.81,0.59,0.77,0.82
+DyT,Pre,0,2.47,2.39,0.5,Tanh,3,0.0002,256.0,3-DyTPre-lr=0.0002,Tom doesn't often read books.,Tom n'a pas souvent.,0.55,0.74,0.79,0.56,0.75,0.8
+DyT,Pre,1,1.98,1.93,0.5,Tanh,3,0.0002,256.0,3-DyTPre-lr=0.0002,We've got a visitor.,Nous avons une pause.,0.61,0.8,0.85,0.61,0.81,0.85
+DyT,Pre,2,1.74,1.71,0.5,Tanh,3,0.0002,256.0,3-DyTPre-lr=0.0002,I think this isn't correct.,Je ne pense pas que ce soit correct.,0.64,0.83,0.87,0.64,0.84,0.88
+DyT,Pre,3,1.56,1.57,0.5,Tanh,3,0.0002,256.0,3-DyTPre-lr=0.0002,You'd better do what Tom says.,Tu ferais mieux de ce que Tom dit mieux.,0.67,0.86,0.89,0.66,0.85,0.89
+DyT,Pre,4,1.42,1.49,0.5,Tanh,3,0.0002,256.0,3-DyTPre-lr=0.0002,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.68,0.88,0.91,0.68,0.86,0.9
+DyT,Pre,0,2.05,1.98,0.5,Tanh,3,0.0004,256.0,3-DyTPre-lr=0.0004,Tom doesn't often read books.,Tom n'a pas souvent de livres.,0.6,0.8,0.84,0.61,0.8,0.85
+DyT,Pre,1,1.65,1.61,0.5,Tanh,3,0.0004,256.0,3-DyTPre-lr=0.0004,We've got a visitor.,Nous avons une bombe.,0.66,0.85,0.89,0.66,0.85,0.89
+DyT,Pre,2,1.45,1.46,0.5,Tanh,3,0.0004,256.0,3-DyTPre-lr=0.0004,I think this isn't correct.,Je ne pense pas que ce soit correct.,0.68,0.87,0.91,0.68,0.87,0.9
+DyT,Pre,3,1.29,1.36,0.5,Tanh,3,0.0004,256.0,3-DyTPre-lr=0.0004,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.71,0.89,0.92,0.7,0.88,0.91
+DyT,Pre,4,1.18,1.31,0.5,Tanh,3,0.0004,256.0,3-DyTPre-lr=0.0004,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.72,0.9,0.93,0.7,0.89,0.92
+DyT,Pre,0,4.0,3.92,0.5,Tanh,3,2.5e-05,256.0,3-DyTPre-lr=2.5e-05,Tom doesn't often read books.,Tom n'a pas.,0.4,0.55,0.61,0.4,0.55,0.61
+DyT,Pre,1,3.46,3.38,0.5,Tanh,3,2.5e-05,256.0,3-DyTPre-lr=2.5e-05,We've got a visitor.,Nous avons une voiture.,0.44,0.62,0.67,0.45,0.62,0.68
+DyT,Pre,2,3.14,3.06,0.5,Tanh,3,2.5e-05,256.0,3-DyTPre-lr=2.5e-05,I think this isn't correct.,Je ne pense pas que ça.,0.47,0.66,0.71,0.48,0.66,0.72
+DyT,Pre,3,2.92,2.84,0.5,Tanh,3,2.5e-05,256.0,3-DyTPre-lr=2.5e-05,You'd better do what Tom says.,Tu ferais mieux de Tom.,0.49,0.68,0.73,0.5,0.69,0.74
+DyT,Pre,4,2.72,2.67,0.5,Tanh,3,2.5e-05,256.0,3-DyTPre-lr=2.5e-05,We're not really sure.,Nous ne sommes vraiment pas vraiment.,0.52,0.71,0.76,0.52,0.71,0.76
+DyT,Pre,0,3.48,3.39,0.5,Tanh,3,5e-05,256.0,3-DyTPre-lr=5e-05,Tom doesn't often read books.,Tom ne sait pas.,0.45,0.62,0.67,0.45,0.62,0.68
+DyT,Pre,1,2.92,2.85,0.5,Tanh,3,5e-05,256.0,3-DyTPre-lr=5e-05,We've got a visitor.,Nous avons un accident.,0.5,0.68,0.74,0.5,0.69,0.74
+DyT,Pre,2,2.62,2.54,0.5,Tanh,3,5e-05,256.0,3-DyTPre-lr=5e-05,I think this isn't correct.,Je ne pense pas que ce soit.,0.53,0.72,0.77,0.54,0.73,0.78
+DyT,Pre,3,2.41,2.34,0.5,Tanh,3,5e-05,256.0,3-DyTPre-lr=5e-05,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom.,0.55,0.75,0.8,0.56,0.75,0.8
+DyT,Pre,4,2.23,2.19,0.5,Tanh,3,5e-05,256.0,3-DyTPre-lr=5e-05,We're not really sure.,Nous ne sommes pas vraiment sûre.,0.58,0.77,0.82,0.58,0.77,0.82
+DyT,Pre,0,2.27,2.18,0.5,Tanh,3,0.0001,256.0,3-DyTPreAlpha-dim_hidden=512,Peel and finely chop the horseradish.,Des <unk> et <unk>.,0.58,0.77,0.82,0.59,0.78,0.82
+DyT,Pre,1,1.8,1.74,0.5,Tanh,3,0.0001,256.0,3-DyTPreAlpha-dim_hidden=512,"You already know who I'm talking about, don't you?","Vous savez de parler, n'est-ce pas ?",0.64,0.83,0.87,0.64,0.83,0.87
+DyT,Pre,2,1.54,1.54,0.5,Tanh,3,0.0001,256.0,3-DyTPreAlpha-dim_hidden=512,It's actually not that difficult.,Ce n'est pas vraiment fait ça.,0.67,0.86,0.9,0.67,0.86,0.89
+DyT,Pre,3,1.32,1.42,0.5,Tanh,3,0.0001,256.0,3-DyTPreAlpha-dim_hidden=512,The cat is in its basket.,Le chat est connu.,0.71,0.89,0.92,0.69,0.87,0.91
+DyT,Pre,4,1.2,1.35,0.5,Tanh,3,0.0001,256.0,3-DyTPreAlpha-dim_hidden=512,It's more trouble than it's worth.,Ça en vaut mieux que ça vaut la peine.,0.73,0.9,0.93,0.7,0.88,0.91
+DyT,Pre,0,2.26,2.16,0.5,Hardtanh,3,0.0001,256.0,3-DyTPreHardtanhAlpha-dim_hidden=512,Peel and finely chop the horseradish.,Des <unk> et <unk>.,0.58,0.77,0.82,0.59,0.78,0.82
+DyT,Pre,1,1.79,1.73,0.5,Hardtanh,3,0.0001,256.0,3-DyTPreHardtanhAlpha-dim_hidden=512,"You already know who I'm talking about, don't you?","Vous savez de parler, n'est-ce pas ?",0.64,0.83,0.87,0.65,0.83,0.87
+DyT,Pre,2,1.53,1.53,0.5,Hardtanh,3,0.0001,256.0,3-DyTPreHardtanhAlpha-dim_hidden=512,It's actually not that difficult.,Ce n'est pas vraiment difficile.,0.68,0.86,0.9,0.68,0.86,0.89
+DyT,Pre,3,1.32,1.41,0.5,Hardtanh,3,0.0001,256.0,3-DyTPreHardtanhAlpha-dim_hidden=512,The cat is in its basket.,Le chat est panier.,0.71,0.89,0.92,0.69,0.87,0.91
+DyT,Pre,4,1.19,1.34,0.5,Hardtanh,3,0.0001,256.0,3-DyTPreHardtanhAlpha-dim_hidden=512,It's more trouble than it's worth.,C'est plus grand que ça en vaut la peine.,0.73,0.9,0.93,0.7,0.88,0.91
+DyT,Pre,0,2.26,2.16,0.5,LeakyHardtanh,3,0.0001,256.0,3-DyTPreLeakyHardtanhAlpha-dim_hidden=512,Peel and finely chop the horseradish.,Des <unk> et <unk>.,0.58,0.77,0.82,0.59,0.78,0.82
+DyT,Pre,1,1.79,1.73,0.5,LeakyHardtanh,3,0.0001,256.0,3-DyTPreLeakyHardtanhAlpha-dim_hidden=512,"You already know who I'm talking about, don't you?","Vous savez de parler, n'est-ce pas ?",0.64,0.83,0.87,0.65,0.83,0.87
+DyT,Pre,2,1.53,1.53,0.5,LeakyHardtanh,3,0.0001,256.0,3-DyTPreLeakyHardtanhAlpha-dim_hidden=512,It's actually not that difficult.,Ce n'est pas vraiment difficile.,0.67,0.86,0.9,0.68,0.86,0.89
+DyT,Pre,3,1.32,1.41,0.5,LeakyHardtanh,3,0.0001,256.0,3-DyTPreLeakyHardtanhAlpha-dim_hidden=512,The cat is in its basket.,Le chat est panier.,0.71,0.89,0.92,0.69,0.87,0.91
+DyT,Pre,4,1.19,1.34,0.5,LeakyHardtanh,3,0.0001,256.0,3-DyTPreLeakyHardtanhAlpha-dim_hidden=512,It's more trouble than it's worth.,C'est plus grand que ça en vaut la peine.,0.73,0.9,0.93,0.7,0.88,0.91
+Layernorm,Pre,0,2.39,2.29,,,3,0.0002,256.0,3-LayernormPre-lr=0.0002,Tom doesn't often read books.,Tom ne sait pas souvent.,0.56,0.75,0.8,0.57,0.76,0.81
+Layernorm,Pre,1,1.91,1.85,,,3,0.0002,256.0,3-LayernormPre-lr=0.0002,We've got a visitor.,Nous avons une pause.,0.62,0.81,0.86,0.63,0.82,0.86
+Layernorm,Pre,2,1.68,1.64,,,3,0.0002,256.0,3-LayernormPre-lr=0.0002,I think this isn't correct.,Je ne pense pas que ce soit correct.,0.65,0.84,0.88,0.65,0.85,0.88
+Layernorm,Pre,3,1.51,1.52,,,3,0.0002,256.0,3-LayernormPre-lr=0.0002,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.67,0.86,0.9,0.67,0.86,0.9
+Layernorm,Pre,4,1.37,1.43,,,3,0.0002,256.0,3-LayernormPre-lr=0.0002,We're not really sure.,Nous ne sommes pas vraiment sûres.,0.69,0.88,0.91,0.69,0.87,0.9
+Layernorm,Pre,0,2.01,1.91,,,3,0.0004,256.0,3-LayernormPre-lr=0.0004,Tom doesn't often read books.,Tom ne regarde pas souvent.,0.61,0.8,0.85,0.62,0.81,0.85
+Layernorm,Pre,1,1.6,1.57,,,3,0.0004,256.0,3-LayernormPre-lr=0.0004,We've got a visitor.,Nous avons une terrible.,0.66,0.86,0.89,0.66,0.85,0.89
+Layernorm,Pre,2,1.42,1.42,,,3,0.0004,256.0,3-LayernormPre-lr=0.0004,I think this isn't correct.,Je ne pense pas que ce soit correct.,0.69,0.88,0.91,0.69,0.87,0.91
+Layernorm,Pre,3,1.27,1.34,,,3,0.0004,256.0,3-LayernormPre-lr=0.0004,You'd better do what Tom says.,Tu ferais mieux de faire ce que Tom dit.,0.71,0.89,0.93,0.7,0.88,0.92
+Layernorm,Pre,4,1.16,1.29,,,3,0.0004,256.0,3-LayernormPre-lr=0.0004,We're not really sure.,Nous ne sommes pas vraiment sûrs.,0.73,0.91,0.94,0.71,0.89,0.92
+Layernorm,Pre,0,3.86,3.76,,,3,2.5e-05,256.0,3-LayernormPre-lr=2.5e-05,Tom doesn't often read books.,Tom ne peut pas.,0.42,0.57,0.63,0.42,0.58,0.63
+Layernorm,Pre,1,3.32,3.22,,,3,2.5e-05,256.0,3-LayernormPre-lr=2.5e-05,We've got a visitor.,Nous avons une voiture.,0.46,0.64,0.69,0.47,0.64,0.7
+Layernorm,Pre,2,3.01,2.91,,,3,2.5e-05,256.0,3-LayernormPre-lr=2.5e-05,I think this isn't correct.,Je ne pense pas que ce soit.,0.49,0.67,0.73,0.5,0.68,0.73
+Layernorm,Pre,3,2.8,2.69,,,3,2.5e-05,256.0,3-LayernormPre-lr=2.5e-05,You'd better do what Tom says.,Tu ferais mieux de Tom.,0.51,0.7,0.75,0.52,0.71,0.76
+Layernorm,Pre,4,2.61,2.53,,,3,2.5e-05,256.0,3-LayernormPre-lr=2.5e-05,We're not really sure.,Nous ne sommes vraiment pas vraiment.,0.54,0.72,0.77,0.54,0.73,0.78
+Layernorm,Pre,0,3.35,3.24,,,3,5e-05,256.0,3-LayernormPre-lr=5e-05,Tom doesn't often read books.,Tom n'a rien.,0.46,0.63,0.69,0.47,0.64,0.7
+Layernorm,Pre,1,2.8,2.71,,,3,5e-05,256.0,3-LayernormPre-lr=5e-05,We've got a visitor.,Nous avons une pause.,0.51,0.7,0.75,0.52,0.7,0.76
+Layernorm,Pre,2,2.51,2.41,,,3,5e-05,256.0,3-LayernormPre-lr=5e-05,I think this isn't correct.,Je ne pense pas que ce soit.,0.55,0.73,0.78,0.56,0.74,0.79
+Layernorm,Pre,3,2.3,2.22,,,3,5e-05,256.0,3-LayernormPre-lr=5e-05,You'd better do what Tom says.,Tu ferais mieux de Tom.,0.57,0.76,0.81,0.58,0.77,0.81
+Layernorm,Pre,4,2.13,2.08,,,3,5e-05,256.0,3-LayernormPre-lr=5e-05,We're not really sure.,Nous ne sommes pas vraiment sûr.,0.59,0.78,0.83,0.6,0.79,0.83
+DyT,Post,0,5.51,5.49,0.5,LeakyHardtanh,2,0.0001,512.0,2-DyTPostLeakyHardtanhAlpha=0.5-dim_hidden=512,I saw Tom kill the neighbor's cat.,,0.11,0.35,0.44,0.11,0.35,0.44
+DyT,Post,1,4.16,4.05,0.5,LeakyHardtanh,2,0.0001,512.0,2-DyTPostLeakyHardtanhAlpha=0.5-dim_hidden=512,The thief slipped into the house.,Le était le est le la la la la la la de.,0.35,0.51,0.58,0.36,0.52,0.58
+DyT,Post,2,3.69,3.61,0.5,LeakyHardtanh,2,0.0001,512.0,2-DyTPostLeakyHardtanhAlpha=0.5-dim_hidden=512,I debated whether I should say anything.,Je suis que je je je je vous faire.,0.4,0.57,0.64,0.4,0.58,0.64
+DyT,Post,3,3.45,3.33,0.5,LeakyHardtanh,2,0.0001,512.0,2-DyTPostLeakyHardtanhAlpha=0.5-dim_hidden=512,We don't have the same values.,Nous n'avons pas pas.,0.42,0.61,0.67,0.43,0.62,0.68
+DyT,Post,4,3.2,3.12,0.5,LeakyHardtanh,2,0.0001,512.0,2-DyTPostLeakyHardtanhAlpha=0.5-dim_hidden=512,There are few houses around here.,Il y a ici ici.,0.45,0.64,0.7,0.45,0.65,0.71
